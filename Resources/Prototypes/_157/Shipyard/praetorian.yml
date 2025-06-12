@@ -26,7 +26,7 @@
 - type: gameMap
   id: Praetorian
   mapName: 'Praetorian'
-  mapPath: /Maps/_157/Shuttles/Praetorian.yml
+  mapPath: /Maps/_157/Shuttles/praetorian.yml
   minPlayers: 0
   stations:
     Praetorian:
