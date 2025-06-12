@@ -1,0 +1,44 @@
+# Author Info
+# GitHub: AscendantDestiny
+# Discord: AscendantDestiny
+
+# Maintainer Info
+# GitHub: 
+# Discord: 
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Praetorian
+  parent: BaseVessel
+  name: NC Praetorian
+  description: A small mercenary vessel for bringing in baddies to security.
+  price: 27000 # ~23,500 on purchase, ~15% markup
+  category: Medium
+  group: Shipyard
+  shuttlePath: /Maps/_157/Shuttles/praetorian.yml
+  guidebookPage: Null
+  class:
+  - Civilian
+  engine:
+  - Uranium
+
+- type: gameMap
+  id: Baroness
+  mapName: 'NC Praetorian'
+  mapPath: /Maps/_157/Shuttles/praetorian.yml
+  minPlayers: 0
+  stations:
+    Praetorian:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Praetorian {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]
