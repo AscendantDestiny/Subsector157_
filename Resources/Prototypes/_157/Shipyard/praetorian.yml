@@ -12,9 +12,9 @@
   id: Praetorian
   parent: BaseVessel
   name: NC Praetorian
-  description: A small mercenary vessel for bringing in baddies to security.
-  price: 27000 # ~23,500 on purchase, ~15% markup
-  category: Medium
+  description: A small mercenary vessel. 
+  price: 27500 # ~25000$ on mapinit + 10% markup
+  category: Small
   group: Shipyard
   shuttlePath: /Maps/_157/Shuttles/praetorian.yml
   guidebookPage: Null
@@ -24,9 +24,9 @@
   - Uranium
 
 - type: gameMap
-  id: Baroness
-  mapName: 'NC Praetorian'
-  mapPath: /Maps/_157/Shuttles/praetorian.yml
+  id: Praetorian
+  mapName: 'Praetorian'
+  mapPath: /Maps/_157/Shuttles/Praetorian.yml
   minPlayers: 0
   stations:
     Praetorian:
