@@ -1,0 +1,44 @@
+# Author Info
+# GitHub: AscendantDestiny
+# Discord: 
+
+# Maintainer Info
+# GitHub: AscendantDestiny
+# Discord: AscendantDestiny
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Flea
+  parent: BaseVessel
+  name: NC Flea
+  description: Flea is a small transport vessel with ample room for customization. Produced by LuxorCorp
+  price: 19000
+  category: Small
+  group: Shipyard
+  shuttlePath: /Maps/_157/Shuttles/flea.yml
+  guidebookPage: Null
+  class:
+  - Civilian
+  engine:
+  - Plasma
+
+- type: gameMap
+  id: Flea
+  mapName: 'Flea'
+  mapPath: /Maps/_157/Shuttles/flea.yml
+  minPlayers: 0
+  stations:
+    Flea:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Flea {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]
