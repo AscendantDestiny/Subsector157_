@@ -9,14 +9,14 @@
 # Shuttle Notes:
 #
 - type: vessel
-  id: PTS
+  id: NC Flea
   parent: BaseVessel
-  name: NC Personal Transport
-  description: A small transport shuttle with space for 4 passengers. Comes with the latest audio entertainment technology.
+  name: NC Flea
+  description: A small transport shuttle.
   price: 17500 # $16634 after appraisal + ~5% markup
   category: Small
   group: Shipyard
-  shuttlePath: /Maps/_NF/Shuttles/pts.yml
+  shuttlePath: /Maps/_157/Shuttles/flea.yml
   guidebookPage: Null
   class:
   - Civilian
@@ -24,16 +24,16 @@
   - Plasma
 
 - type: gameMap
-  id: PTS
-  mapName: 'NC Personal Transport'
-  mapPath: /Maps/_NF/Shuttles/pts.yml
+  id: Flea
+  mapName: 'NC Flea'
+  mapPath: /Maps/_157/Shuttles/flea.yml
   minPlayers: 0
   stations:
-    PTS:
+    Flea:
       stationProto: StandardFrontierVessel
       components:
       - type: StationNameSetup
-        mapNameTemplate: 'PTS {1}'
+        mapNameTemplate: 'Flea {1}'
         nameGenerator: !type:NanotrasenNameGenerator
           prefixCreator: '14'
       - type: StationJobs
