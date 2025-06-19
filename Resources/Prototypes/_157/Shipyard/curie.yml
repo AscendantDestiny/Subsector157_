@@ -1,0 +1,45 @@
+# Author Info
+# GitHub: AscendantDestiny
+# Discord: AscendantDestiny
+
+# Maintainer Info
+# GitHub: ???
+# Discord: ???
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Curie
+  parent: BaseVessel
+  name: NR Curie
+  description: A small research shuttle designed for xenoarcheological studies.
+  price: 30000
+  category: Small
+  group: Shipyard
+  shuttlePath: /Maps/_157/Shuttles/curie.yml
+  guidebookPage: Null
+  class:
+  - Science
+  engine:
+  - AME
+  
+
+- type: gameMap
+  id: Curie
+  mapName: 'NR Curie'
+  mapPath: /Maps/_157/Shuttles/curie.yml
+  minPlayers: 0
+  stations:
+    Curie:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Curie {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]
