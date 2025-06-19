@@ -1,0 +1,44 @@
+# Author Info
+# GitHub: AscendantDestiny
+# Discord: AscendantDestiny
+
+# Maintainer Info
+# GitHub: 
+# Discord: 
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Carver
+  parent: BaseVessel
+  name: NC Carver
+  description: A lounge ship with a small galley 
+  price: 35000 # 
+  category: Small
+  group: Shipyard
+  shuttlePath: /Maps/_157/Shuttles/carver.yml
+  guidebookPage: Null
+  class:
+  - Kitchen
+  engine:
+  - Plasma
+
+- type: gameMap
+  id: Carver
+  mapName: 'NT Carver'
+  mapPath: /Maps/_157/Shuttles/carver.yml
+  minPlayers: 0
+  stations:
+    Carver:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Carver {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]
