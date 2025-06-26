@@ -1,0 +1,41 @@
+# Author Info
+# GitHub: AscendantDestiny
+# Discord: AscendantDestiny
+
+# Maintainer Info
+# GitHub: AscendantDestiny
+# Discord: AscendantDestiny
+
+# Shuttle Notes:
+- type: vessel
+  id: Gumshoe
+  name: NSF Gumshoe
+  parent: BaseVessel
+  description: A small detective runabout for intelligence gathering and forensic work. LuxorCorp
+  price: 27000 # Approx 20% markup applied to the appraisal price of 22500.
+  category: Small
+  group: Security
+  access: Detective
+  shuttlePath: /Maps/_157/Shuttles/SF/gumshoe.yml
+  guidebookPage: Null
+  class:
+  - Detective
+  engine:
+  - uranium
+
+- type: gameMap
+  id: Gumshoe
+  mapName: 'NSF Gumshoe'
+  mapPath: /Maps/_157/Shuttles/SF/gumshoe.yml
+  minPlayers: 0
+  stations:
+    Gumshoe:
+      stationProto: StandardFrontierSecurityVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Gumshoe {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs: {}
